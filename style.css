@@ -21,8 +21,8 @@
 
 :root{
     --main_colour: rgb(136, 134, 134);
-    --box_shadow: #000000;
-    --box_border: #000000;
+    --border-1: rgba(228, 9, 20, 0.616);
+    --border-2: rgba(111, 31, 185, 0.616);
     --background_colour: black;
     --text_colour: rgb(75, 73, 73);
 
@@ -58,7 +58,7 @@ header h2{
     padding:10px;
     font-family: AlexBrush;
     font-size: 350%;
-    color: rgb(136, 134, 134);
+    color: var(--main_colour);
    
 }
 
@@ -83,8 +83,8 @@ nav a {
 }
 
 nav a:hover{
-    border-color: rgba(228, 9, 20, 0.616);
-    box-shadow: 0px 0px 10px rgba(111, 31, 185, 0.616);    
+    border-color: var(--border-1);
+    box-shadow: 0px 0px 10px var(--border-2);    
 }
 
 
@@ -105,7 +105,7 @@ nav a:hover{
     margin-right: auto;
     height: 40%;
     width: 40%;
-    box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);   
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);   
 }
 
 .description{
@@ -186,64 +186,101 @@ main li{
 }
 
 .box{
+    position: relative;
     padding:15px;
     margin:2%;
     width:20%;
     height: 100px;
-    border:1px solid var(--box_border);
-    box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
+    border:1px solid var(--background_colour);
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
     border-radius:3px;
     transition:.2s all;     
 }
 
 .box-main{
+    position: relative;
     padding:15px;
     margin:2%;
-    width:40%;
+    width:60%;
     height: 80%;
-    border:1px solid var(--box_border);
-    box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
+    border:1px solid var(--background_colour);
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
     border-radius:3px;
     transition:.2s all;     
 }
 
 a.text_style{
-    position: relative;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration: none;
     color: var(--text_colour);
-    bottom: -10px
+    background-color: rgb(129, 4, 10);
+    border-radius: 3px;
+    height: 30px;
+    width: 70%;
+    color: rgb(170, 168, 168)
 }
 
 .horiseon-img{
     position: relative;
-    bottom: -40px;
     height: 40%;
-    width:80%;
-    top: 13px;
-    
+    width: 80%;
+    bottom: 0px    
 }
 
+.smaller_img{
+    position: relative;
+    height: 100%;
+    width:90%;
+    bottom: 0px  
+}
+
+a.smaller-project-text{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: var(--text_colour);
+    background-color: rgb(129, 4, 10);
+    border-radius: 3px;
+    height: 30px;
+    width: 70%;
+    color: rgb(170, 168, 168)
+
+}
 .box-wrap:hover .box{
-    box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
 }
 
 .box-wrap-main:hover .box-main{
-    box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
 }
 
 .box-wrap:hover .box:hover{
     transform:scale(1.1);
-    box-shadow: -50px -50px 0 -40px rgba(111, 31, 185, 0.616), 50px 50px 0 -40px rgba(228, 9, 20, 0.616);
+    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
 }
 
 .box-wrap-main:hover .box-main:hover{
     transform:scale(1.1);
-    box-shadow: -50px -50px 0 -40px rgba(111, 31, 185, 0.616), 50px 50px 0 -40px rgba(228, 9, 20, 0.616);
+    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
+}
+
+.box-main:hover a.text_style{
+    background-color: rgb(65, 18, 109);
+}
+
+.box:hover a.smaller-project-text{
+    background-color: rgb(65, 18, 109);
 }
 
 .contact{
     margin: 2%
 }
+
 
 
 
@@ -277,5 +314,18 @@ footer p{
         display: flex;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 540px) {
+    a.text_style{
+        height: 50px;
+        top: 20%
+        
+        
+    }
 
 }
+@media screen and (max-width: 787px) {
+    a.smaller-project-text{
+        height: 50px;
+        top: 40%
