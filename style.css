@@ -253,10 +253,6 @@ footer p{
 }
 
 @media screen and (max-width: 1160px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-    }
 
     .section_style{
         flex-direction: column;
@@ -274,4 +270,12 @@ footer p{
     .img-style{
         left: 0
     }
+}
+
+@media screen and (max-width: 790px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
 }
