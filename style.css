@@ -173,7 +173,7 @@ main li{
     justify-content:center;
     flex-direction: column;
     margin:3%;
-    min-width: 55%;  
+    min-width: 50%;  
 }
 
 .box-wrap{
@@ -188,7 +188,7 @@ main li{
 .box{
     padding:15px;
     margin:2%;
-    width:25%;
+    width:20%;
     height: 100px;
     border:1px solid var(--box_border);
     box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
@@ -199,8 +199,8 @@ main li{
 .box-main{
     padding:15px;
     margin:2%;
-    width:50%;
-    height: 70%;
+    width:40%;
+    height: 80%;
     border:1px solid var(--box_border);
     box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
     border-radius:3px;
