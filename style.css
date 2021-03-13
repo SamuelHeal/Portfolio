@@ -88,8 +88,11 @@ nav a:hover{
 }
 
 
+
 .section_style{
     display:flex;
+    flex-direction: row;
+    width: 100%
 
 }
 
@@ -112,6 +115,7 @@ nav a:hover{
     text-align: left;
     left: 5%;
     top: 150px;
+    margin-bottom: auto;
     color: rgb(75, 73, 73)
 }
 
@@ -127,6 +131,11 @@ nav a:hover{
 
 
 
+.flex {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
 .margin {
     margin: 70px
 }
@@ -191,7 +200,7 @@ main li{
     padding:15px;
     margin:2%;
     width:50%;
-    height: 500px;
+    height: 70%;
     border:1px solid var(--box_border);
     box-shadow: -50px -50px 0 -40px rgba(228, 9, 20, 0.616), 50px 50px 0 -40px rgba(111, 31, 185, 0.616);
     border-radius:3px;
@@ -208,11 +217,10 @@ a.text_style{
 .horiseon-img{
     position: relative;
     bottom: -40px;
-    height: 400px;
+    height: 40%;
     width:80%;
-    margin-top: 1px;
-    border-style: double;
-    border-color: var(--text_colour);
+    top: 13px;
+    
 }
 
 .box-wrap:hover .box{
@@ -244,4 +252,26 @@ footer p{
     font-size: 250%;
 }
 
+@media screen and (max-width: 1160px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
 
+    .section_style{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .description{
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 3%;
+        top: 10px;
+        left: 0
+    }
+    
+    .img-style{
+        left: 0
+    }
+}
