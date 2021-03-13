@@ -1,5 +1,9 @@
 # Portfolio
 
+****QUESTION****
+How do you get custom fonts working in github? They were working perfectly locally but once pushed to github they would not load.
+*****************
+
 Week 2 Homework - Porfolio
 
 Description of task:
