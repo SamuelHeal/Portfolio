@@ -6,17 +6,17 @@
 
 @font-face{
     font-family: Roboto-Slab;
-    src: url(../Fonts/RobotoSlab-VariableFont_wght.ttf)
+    src: url(Fonts/RobotoSlab-VariableFont_wght.ttf)
 }
 
 @font-face{
     font-family: Monsieur;
-    src: url(../Fonts/MonsieurLaDoulaise-Regular.ttf)
+    src: url(Fonts/MonsieurLaDoulaise-Regular.ttf)
 }
 
 @font-face{
     font-family: AlexBrush;
-    src: url(../Fonts/AlexBrush-Regular.ttf)
+    src: url(Fonts/AlexBrush-Regular.ttf)
 }
 
 :root{
@@ -56,7 +56,7 @@ body{
 
 header h2{
     padding:10px;
-    font-family: AlexBrush;
+    font-family: AlexBrush, "Apple Chancery", cursive;
     font-size: 350%;
     color: var(--main_colour);
    
@@ -110,7 +110,7 @@ nav a:hover{
 
 .description{
     position: relative;
-    font-family: AlexBrush;
+    font-family: AlexBrush, "Snell Roundhand", cursive;
     font-size: 170%;
     text-align: left;
     left: 5%;
@@ -285,7 +285,7 @@ a.smaller-project-text{
 
 
 footer p{
-    font-family: Monsieur;
+    font-family: Monsieur, "Snell Roundhand", cursive;
     font-size: 250%;
 }
 
