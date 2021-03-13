@@ -6,17 +6,17 @@
 
 @font-face{
     font-family: Roboto-Slab;
-    src: url(RobotoSlab-VariableFont_wght.ttf)
+    src: url(Fonts/RobotoSlab-VariableFont_wght.ttf)
 }
 
 @font-face{
     font-family: Monsieur;
-    src: url(MonsieurLaDoulaise-Regular.ttf)
+    src: url(Fonts/MonsieurLaDoulaise-Regular.ttf)
 }
 
 @font-face{
     font-family: AlexBrush;
-    src: url(AlexBrush-Regular.ttf)
+    src: url(Fonts/AlexBrush-Regular.ttf)
 }
 
 :root{
