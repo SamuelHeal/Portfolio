@@ -333,7 +333,7 @@ a.smaller-project-text{
     background: linear-gradient(120deg,transparent, rgba(43, 44, 102, 0.4),transparent);
 }
 
-.liquidBox {
+.waterBox {
     
     position: relative;
     padding: 20px 50px;
@@ -345,7 +345,7 @@ a.smaller-project-text{
     border-radius: 40px;
 }
 
-.liquidBox span {
+.waterBox span {
     position: relative;
     left: -25px;
     color: #fff;
@@ -355,7 +355,7 @@ a.smaller-project-text{
     z-index: 1;
 }
 
-.liquidBox .liquid {
+.waterBox .liquid {
     position: absolute;
     top: -80px;
     left: 0;
@@ -366,8 +366,8 @@ a.smaller-project-text{
     transition: .5s;
 }
 
-.liquidBox .liquid::after,
-.liquidBox .liquid::before {
+.waterBox .water::after,
+.waterBox .water::before {
     content: '';
     width: 200%;
     height: 200%;
@@ -378,23 +378,23 @@ a.smaller-project-text{
     background: #000;
 }
 
-.liquidBox .liquid::before {
+.waterBox .water::before {
     border-radius: 45%;
     background: rgba(20, 20, 20, 1);
     animation: animate 5s linear infinite;
 }
 
-.liquidBox .liquid::after {
+.waterBox .water::after {
     border-radius: 40%;
     background: rgba(20, 20, 20, .5);
     animation: animate 10s linear infinite;
 }
 
-.liquidBox:hover .liquid{
+.waterBox:hover .water{
     top: -120px;
 }
 
-.liquidBox:hover{
+.waterBox:hover{
     text-decoration: none;
     
 }

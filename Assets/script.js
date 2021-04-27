@@ -1,7 +1,5 @@
 const searchButton = document.querySelector(".liquidBox")
 var navbar = document.querySelector(".header");
-
-// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
 
