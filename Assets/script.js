@@ -1,4 +1,4 @@
-const searchButton = document.querySelector(".liquidBox")
+const searchButton = document.querySelector(".waterBox")
 var navbar = document.querySelector(".header");
 var sticky = navbar.offsetTop;
 
