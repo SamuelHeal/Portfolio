@@ -22,7 +22,7 @@ The page was required to have a number of things included, these were:
 
 Image of portfolio:
 
-![screenshot](.Assets/Images/portfolio-image.png)
+![screenshot](portfolio-image.png)
 
 Link to deployed site:
 https://samuelheal.github.io/Portfolio/
