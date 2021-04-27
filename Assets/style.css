@@ -403,6 +403,18 @@ a.smaller-project-text{
     display: none;
 }
 
+.contactMe{
+    color: var(--main_colour);
+}
+
+.contactPhone{
+    color: var(--main_colour);
+}
+
+.contactMe:hover{
+    color: var(--border-2);
+    text-decoration: none;
+}
 footer{
     margin-top: 200px;
     font-family: Monsieur, "Snell Roundhand", cursive;
