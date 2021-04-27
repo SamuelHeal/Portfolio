@@ -19,6 +19,11 @@
     src: url(Fonts/AlexBrush-Regular.ttf)
 }
 
+@keyframes animate {
+    0% {transform: translate(-50%, -75%) rotate(0deg);}
+    100% {transform: translate(-50%, -75%) rotate(360deg);}
+  }
+
 :root{
     --main_colour: rgb(136, 134, 134);
     --border-1: rgba(228, 9, 20, 0.616);
@@ -43,6 +48,9 @@ body{
   }
 
 .header{
+    overflow: hidden;
+    z-index: 9999;
+    background-color: black;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem;
@@ -54,12 +62,37 @@ body{
     font-size: 140%;   
 }
 
-header h2{
+.headerStart{
     padding:10px;
     font-family: AlexBrush, "Apple Chancery", cursive;
-    font-size: 350%;
+    font-size: 300%;
     color: var(--main_colour);
    
+}
+
+.headerStart:hover{
+    padding:10px;
+    font-family: AlexBrush, "Apple Chancery", cursive;
+    font-size: 300%;
+    color: var(--main_colour);
+    text-decoration: none;
+}
+
+.headerLink{
+    padding:10px;
+    font-family: AlexBrush, "Apple Chancery", cursive;
+    font-size: 300%;
+    color: var(--main_colour);;
+}
+
+.headerLink:hover{
+    padding:10px;
+    font-family: AlexBrush, "Apple Chancery", cursive;
+    font-size: 300%;
+    color: var(--border-2);;
+    text-decoration: none;
+    cursor: pointer;
+
 }
 
 nav ul {
@@ -87,8 +120,9 @@ nav a:hover{
     box-shadow: 0px 0px 10px var(--border-2);    
 }
 
-
-
+#topPage{
+    height:150px
+}
 .section_style{
     display:flex;
     flex-direction: row;
@@ -130,15 +164,12 @@ nav a:hover{
 }
 
 
-
 .flex {
     display: flex;
     flex-direction: column;
     width: 100%
 }
-.margin {
-    margin: 70px
-}
+
 
 main h3{
     margin: 30px;
@@ -165,6 +196,19 @@ main li{
     border-radius: 3px;
     text-decoration: none;
     margin: 10px
+}
+
+.skillHeading{
+    font-size: 25px;
+    color:var(--main_colour)
+}
+
+.full{
+    color: var(--border-1)
+}
+
+.stack{
+    color: var(--border-2);
 }
 
 .box-wrap-main{
@@ -277,14 +321,78 @@ a.smaller-project-text{
     background-color: rgb(65, 18, 109);
 }
 
-.contact{
-    margin: 2%
+
+.liquidBox {
+    position: relative;
+    padding: 20px 50px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 40px;
 }
 
+.liquidBox span {
+    position: relative;
+    left: -17px;
+    color: #fff;
+    font-size: 20px;
+    font-family: Roboto-Slab, "Apple Chancery", cursive;
+    letter-spacing: 8px;
+    z-index: 1;
+}
 
+.liquidBox .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: var(--border-1);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: .5s;
+}
 
+.liquidBox .liquid::after,
+.liquidBox .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+}
 
-footer p{
+.liquidBox .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+}
+
+.liquidBox .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, .5);
+    animation: animate 10s linear infinite;
+}
+
+.liquidBox:hover .liquid{
+    top: -120px;
+}
+
+.liquidBox:hover{
+    text-decoration: none;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    margin-top: 200px;
     font-family: Monsieur, "Snell Roundhand", cursive;
     font-size: 250%;
 }
@@ -331,3 +439,37 @@ footer p{
         top: 40%
     }
 }
+
+
+/* Style the navbar */
+/* #navbar {
+    overflow: hidden;
+    background-color: ;
+  } */
+  
+  /* Navbar links */
+  /* #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+  } */
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
