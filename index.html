@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
+    <link rel="stylesheet" type="text/css" href="reset.css"></link>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
     
     <link rel="icon" href="Images/briefcase.png"></link>
@@ -17,7 +18,7 @@
     <nav class="hidden">
       <ul>
         <li><a href="#topPage" id="aboutBtn">About Me</a></li>
-        <li><a href="#ProjectLocate" id="projectsBtn">Projects</a></li>
+        <li><a href="#Projects" id="projectsBtn">Projects</a></li>
         <li><a href="#Contact_me" id="contactBtn">Contact</a></li>
       </ul>
     </nav>
@@ -25,20 +26,21 @@
   </header>
 
   <section class="section_style">
-    <h3 class="description">Hey there, my name is<span class="span1"><br>Sam</span>, and I am a<span class="span2"><br>Web Developer...</span>
+    <h3 class="description">Hey there, my name is<span class="span1"><br>Sam,</span> and I am a<span class="span2"><br>Web Developer...</span>
       <a class="liquidBox" data-toggle="collapse" href="#explore" role="button" aria-expanded="false" aria-controls="explore">
-        <span>Explore</span>
+        <span class="liquidText">Explore</span>
         <div class="liquid"></div>
       </a>
     </h3>
     <img class="img-style" src="Images/sam.jpeg" alt="Sam">
+    <div class="space"></div>
   </section>
 
 
 
   <Main class="flex hidden">
     <div id="topPage"></div>
-    <div id="Contact">
+    <div class="boarder" id="Contact"> 
       <h3 id="Contact_me">Contact Me</h3>
       <p><br>Options to contact me are listed below if you are interested in reaching out to me for work. </p>
         <div>
@@ -50,12 +52,12 @@
           </ul>
         </div>
     </div>
-    <div id="about">
-      <h3 class="margin" id="About_me">About Me</h3>
+    <div class="boarder" id="about">
+      <h3 id="About_me">About Me</h3>
       <p>I am an aspiring <span class="full">Full</span>-<span class="stack">Stack</span> web developer currently studying with Trilogy Education through the University of Sydney. <br><br>Currently, my passion lies in <span class="full">Front-End</span> development, and the large majority of my current skills are centred around this. However, I am incredibly excited to begin focussing on the <span class="stack">Back-End</span> development and see the opportunities that this can present me with.</p>
-      <p><br>My projects page displays the current highlights of my programming career, so if you wish to further explore my work please visit there</p>
+      <p><br>My projects page displays the current highlights of my programming career, so if you wish to further explore my work please visit there.</p>
       <div>
-        <p><br>Below are a list of the skills that I currently possess</p>
+        <p><br>Below are a list of the skills that I currently possess.</p>
         <p class="skillHeading">Languages</p>
         <ul>
           <li>HTML</li>
@@ -63,7 +65,7 @@
           <li>Javascript</li>
           <li>Python3</li>
         </ul>
-        <p class="skillHeading">Libraries</p>
+        <p class="skillHeading">Frameworks</p>
         <ul>
           <li>JQuery</li>
           <li id="ProjectLocate">Bootstrap</li>
@@ -75,32 +77,34 @@
       </div>
     </div>
 
-    <div id="Projects">
-      <h3>Projects</h3>
+    <div class="boarder" id="Projects">
+      <h3 class="projectMargin">Projects</h3>
         <div>
-          <p>Located below are the projects that I have created. Currently, only one project is available but more will be added as I progress within the industry.</p>
+          <p>Located below are the three projects I am currently the most proud of. I would love for you to check them out!</p>
         </div>
-      <div class="box-wrap-main">
+        <div></div>
+      <div class="box-wrap">
         <div class="box-main">
-          <a href="https://samuelheal.github.io/ReaCharity/" target="_blank"><img class="horiseon-img" src="Images/reacharity-logo.png" alt="Horiseon Webpage" ></a>
+          <a href="https://samuelheal.github.io/ReaCharity/" target="_blank"><img class="reaCharity-img" src="Images/reacharity-logo.png" alt="Horiseon Webpage" ></a>
           <div>
             <a href="https://samuelheal.github.io/ReaCharity/" target="_blank" class="text_style">ReaCharity</a>
           </div>
         </div> 
-          
-      </div>
-      <div class="box-wrap">
-        <div class="box">
-          <a href="https://samuelheal.github.io/Work-Day-Scheduler/" target="_blank"><img class="smaller_img" src="Images/save.png" alt="Work-Day-Scheduler" ></a>
-          <div>
-            <a href="https://samuelheal.github.io/Work-Day-Scheduler/" target="_blank" class="smaller-project-text">Work Day Scheduler</a>
+        <div class="box-wrap-second">
+          <div class="box">
+            <a href="https://samuelheal.github.io/Work-Day-Scheduler/" target="_blank"><img class="smaller_img" src="Images/save.png" alt="Work-Day-Scheduler" ></a>
+            <div>
+              <a href="https://samuelheal.github.io/Work-Day-Scheduler/" target="_blank" class="smaller-project-text">Work Day Scheduler</a>
+            </div>
+          </div>
+          <div class="box">
+            <a href="https://samuelheal.github.io/Coding-Quiz/" target="_blank"><img class="smaller_img" src="Images/quiz.png" alt="Quiz Game" ></a>
+            <div>
+              <a href="https://samuelheal.github.io/Coding-Quiz/" target="_blank" class="smaller-project-text">Coding Quiz</a>
           </div>
         </div>
-        <div class="box">
-          <a href="https://samuelheal.github.io/Coding-Quiz/" target="_blank"><img class="smaller_img" src="Images/quiz.png" alt="Quiz Game" ></a>
-          <div>
-            <a href="https://samuelheal.github.io/Coding-Quiz/" target="_blank" class="smaller-project-text">Coding Quiz</a>
-        </div>
+        
+          
       </div>
     </div>
   </Main>

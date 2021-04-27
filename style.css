@@ -65,7 +65,7 @@ body{
 .headerStart{
     padding:10px;
     font-family: AlexBrush, "Apple Chancery", cursive;
-    font-size: 300%;
+    font-size: 400%;
     color: var(--main_colour);
    
 }
@@ -73,7 +73,7 @@ body{
 .headerStart:hover{
     padding:10px;
     font-family: AlexBrush, "Apple Chancery", cursive;
-    font-size: 300%;
+    font-size: 400%;
     color: var(--main_colour);
     text-decoration: none;
 }
@@ -81,19 +81,26 @@ body{
 .headerLink{
     padding:10px;
     font-family: AlexBrush, "Apple Chancery", cursive;
-    font-size: 300%;
+    font-size: 400%;
     color: var(--main_colour);;
 }
 
 .headerLink:hover{
     padding:10px;
     font-family: AlexBrush, "Apple Chancery", cursive;
-    font-size: 300%;
+    font-size: 400%;
     color: var(--border-2);;
     text-decoration: none;
     cursor: pointer;
 
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
 
 nav ul {
     display: flex;
@@ -118,6 +125,8 @@ nav a {
 nav a:hover{
     border-color: var(--border-1);
     box-shadow: 0px 0px 10px var(--border-2);    
+    text-decoration: none;
+    color: var(--border-2);
 }
 
 #topPage{
@@ -129,6 +138,7 @@ nav a:hover{
     width: 100%
 
 }
+
 
 .img-style{
     position: relative;
@@ -211,30 +221,25 @@ main li{
     color: var(--border-2);
 }
 
-.box-wrap-main{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction: column;
-    margin:3%;
-    min-width: 50%;  
-}
-
 .box-wrap{
     display:flex;
     align-items:center;
     justify-content:center;
     flex-direction: row;
     margin:1%;
-    min-width: 55%;
+    min-width: 40%;
+}
+.box-wrap-second{
+    flex-direction: column;
+    width: 30% 
 }
 
 .box{
     position: relative;
     padding:15px;
-    margin:2%;
-    width:20%;
-    height: 100px;
+    margin:40px;
+    width:80%;
+    height: 20vh;
     border:1px solid var(--background_colour);
     box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
     border-radius:3px;
@@ -245,12 +250,38 @@ main li{
     position: relative;
     padding:15px;
     margin:2%;
-    width:60%;
-    height: 80%;
+    width:40%;
+    height: 45vh;
     border:1px solid var(--background_colour);
     box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
     border-radius:3px;
     transition:.2s all;     
+}
+
+.box-wrap:hover .box{
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
+}
+
+.box-wrap:hover .box-main{
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
+}
+
+.box-wrap:hover .box:hover{
+    transform:scale(1.1);
+    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
+}
+
+.box-wrap:hover .box-main:hover{
+    transform:scale(1.1);
+    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
+}
+
+.box-main:hover a.text_style{
+    background-color: rgb(65, 18, 109);
+}
+
+.box:hover a.smaller-project-text{
+    background-color: rgb(65, 18, 109);
 }
 
 a.text_style{
@@ -267,11 +298,11 @@ a.text_style{
     color: rgb(170, 168, 168)
 }
 
-.horiseon-img{
+.reaCharity-img{
     position: relative;
-    height: 40%;
+    height: 100%;
     width: 80%;
-    bottom: 0px    
+    bottom: 10px    
 }
 
 .smaller_img{
@@ -295,34 +326,15 @@ a.smaller-project-text{
     color: rgb(170, 168, 168)
 
 }
-.box-wrap:hover .box{
-    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
-}
 
-.box-wrap-main:hover .box-main{
-    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2);
-}
 
-.box-wrap:hover .box:hover{
-    transform:scale(1.1);
-    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
+.boarder{
+    box-shadow: 1px 1px 25px 1px rgba(63, 64, 114, 0.589);
+    background: linear-gradient(120deg,transparent, rgba(43, 44, 102, 0.4),transparent);
 }
-
-.box-wrap-main:hover .box-main:hover{
-    transform:scale(1.1);
-    box-shadow: -50px -50px 0 -40px var(--border-2), 50px 50px 0 -40px var(--border-1);
-}
-
-.box-main:hover a.text_style{
-    background-color: rgb(65, 18, 109);
-}
-
-.box:hover a.smaller-project-text{
-    background-color: rgb(65, 18, 109);
-}
-
 
 .liquidBox {
+    
     position: relative;
     padding: 20px 50px;
     display: block;
@@ -335,10 +347,10 @@ a.smaller-project-text{
 
 .liquidBox span {
     position: relative;
-    left: -17px;
+    left: -25px;
     color: #fff;
     font-size: 20px;
-    font-family: Roboto-Slab, "Apple Chancery", cursive;
+    font-family: AlexBrush, "Apple Chancery", cursive;
     letter-spacing: 8px;
     z-index: 1;
 }
@@ -404,16 +416,48 @@ footer{
         text-align: center;
     }
 
+    #topPage{
+        height: 200px
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+
     .description{
+        display: flex;
+        flex-direction: column;
         text-align: center;
-        margin-top: 0px;
-        margin-bottom: 3%;
+        justify-content: center;
+        align-items: center;
         top: 10px;
         left: 0
     }
+
+    .span1{
+        position: relative;
+        top: -40px
+    }
     
+    .span2{
+        position: relative;
+        top: -70px
+    }
     .img-style{
         left: 0
+    }
+    
+    .space{
+        height: 50px
+    }
+
+    .liquidBox{
+        top: -20px
+    }
+
+    footer{
+        margin-top: 100px;
     }
 }
 
@@ -422,6 +466,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    
 }
 
 @media screen and (max-width: 540px) {
@@ -432,6 +477,41 @@ footer{
         
     }
 
+    .headerStart{
+        padding:10px;
+        font-family: AlexBrush, "Apple Chancery", cursive;
+        font-size: 300%;
+        color: var(--main_colour);
+       
+    }
+    
+    .headerStart:hover{
+        padding:10px;
+        font-family: AlexBrush, "Apple Chancery", cursive;
+        font-size: 300%;
+        color: var(--main_colour);
+        text-decoration: none;
+    }
+    
+    .headerLink{
+        padding:10px;
+        font-family: AlexBrush, "Apple Chancery", cursive;
+        font-size: 300%;
+        color: var(--main_colour);;
+    }
+    
+    .headerLink:hover{
+        padding:10px;
+        font-family: AlexBrush, "Apple Chancery", cursive;
+        font-size: 300%;
+        color: var(--border-2);;
+        text-decoration: none;
+        cursor: pointer;
+    
+    }
+
+
+
 }
 @media screen and (max-width: 787px) {
     a.smaller-project-text{
@@ -440,36 +520,6 @@ footer{
     }
 }
 
-
-/* Style the navbar */
-/* #navbar {
-    overflow: hidden;
-    background-color: ;
-  } */
   
-  /* Navbar links */
-  /* #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    text-decoration: none;
-  } */
   
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
   
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin-bottom: 30px;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
