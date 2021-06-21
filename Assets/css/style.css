@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+@font-face{
+    font-family: Roboto-Slab;
+    src: url(../Fonts/RobotoSlab-VariableFont_wght.ttf)
+}
+
+@font-face{
+    font-family: Monsieur;
+    src: url(../Fonts/MonsieurLaDoulaise-Regular.ttf)
+}
+
+@font-face{
+    font-family: AlexBrush;
+    src: url(../Fonts/AlexBrush-Regular.ttf)
+}
+
+
+:root{
+    --main_colour: rgb(136, 134, 134);
+    --border-1: rgba(228, 9, 20, 0.616);
+    --border-2:#6214ffe5;
+    --background_colour: rgb(255, 255, 255);
+    --text_colour: rgb(75, 73, 73);
+}
+
+body{
+    color: rgb(2, 2, 2);
+    background-color: var(--background_colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Landing Page */
+
+
+/* Contents Pages */
+
+.header{
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: 9999;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.2rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 140%;   
+}
+
+.header h1{
+    font-size: 60px;
+    font-family: AlexBrush, cursive;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+    font-size: 75%;
+}
+
+nav a {
+    background-color: unset;
+    color: rgb(99, 96, 96);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 20px;
+}
+
+nav a:hover{
+    border-color: var(--border-1);
+    box-shadow: 0px 3px 5px 1px var(--border-2);    
+    text-decoration: none;
+    color: var(--border-2);
+}
+
+.selector{
+    margin-bottom: 20px;
+}
+
+
+.container{
+    position: relative;
+    top: -100px;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageStyle{
+    width: 780px;
+  
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.divContainer{
+    margin: 50px;
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.aboutHeading{
+    width: 1000px;
+}
+
+.aboutTextDiv{
+    width: 40%;
+    margin: 40px;
+}
+
+.aboutImg{
+    width: 250px;
+    margin: 40px;
+}
+
+.name{
+    color: var(--border-1);
+    font-size: 300%;
+    margin: 5px;
+    
+}
+
+.history{
+    font-size: 200%;
+    color: var(--border-2);
+}
+
+.essays{
+    color: aqua;
+}
+
+.lectures{
+    color: rgb(255, 0, 255);
+}
+
+.data{
+    color: rgb(230, 255, 9);
+    font-size: 140%;
+}
+
+.degree{
+    color: orange;
+}
+
+.dream{
+    color: rgb(0, 255, 13) ;
+}
+
+.code{
+    color: rgb(247, 12, 12);
+    font-size: 250%;
+}
+
+.aboutImgDiv{
+    margin: 40px;
+    width: 40%;
+    
+}
+
+.img-style{
+    width: 100%;
+    box-shadow: -50px -50px 0 -40px var(--border-1), 50px 50px 0 -40px var(--border-2); 
+}
+
+
+
+.divContainer2{
+    margin: 50px;
+    width: 70%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillsHeading{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skillsImg{
+    width: 180px;
+    margin: 40px;
+}
+
+.skillsTextDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skillsTextDiv h1{
+    font-size: 20px;
+    font-family: Roboto-Slab, Arial, Helvetica, sans-serif;
+    margin: 20px;
+    color: var(--border-1);
+}
+
+
+.skillsAlign{
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsAlign p{
+    margin: 10px;
+}
+
+
+
+.projectHeading{
+    width: 100%;
+}
+
+.projectsImg{
+    float: right;
+    width: 250px;
+    margin: 40px;
+}
+
+.projectTextDiv{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.projectTextDiv a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.projectTextDiv a:hover{
+    transform: scale(1.04);
+}
+
+.projectType{
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--border-2);
+}
+
+.projectMain{
+    font-family: Roboto-Slab, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: rgb(170, 18, 18);
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 400px;
+    margin: 40px
+}
+
+.projectMain:hover{
+    background-color: rgb(240, 228, 252);
+}
+
+.projectMain h1{
+    margin: 30px;
+    font-size: 20px;
+}
+
+.project{
+    font-family: Roboto-Slab, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: rgb(170, 18, 18);
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 330px;
+    margin: 15px
+}
+
+.project h1{
+    margin: 30px;
+    font-size: 15px;
+}
+
+.project p{
+    position: relative;
+    top: -20px;
+    font-size: 10px;
+}
+
+.imageContainer{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.imageContainer img{
+    height: 250px;
+    width: 290px;
+    margin: 10px
+}
+
+.imageContainerSmall{
+    width: 100%;
+    border-radius: 4px;
+}
+
+.imageContainerSmall img{
+    border-radius: 2px;
+    height: 220px;
+    width: 300px;
+    margin: 10px
+}
+
+
+
+main ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    
+}
+
+main li{
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 10px;
+    color: var(--border-2)
+}
+
+.contactMe{
+    color: white;
+    text-decoration: none;
+}
+
+.contactPhone{
+    color: white;
+}
+
+.contactMe:hover{
+    color: var(--border-1);
+    text-decoration: none;
+}
+
+footer{
+    color: white;
+    margin: 50px;
+    font-family: Monsieur, "Snell Roundhand", cursive;
+    font-size: 250%;
+}
