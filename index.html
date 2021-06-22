@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"></link>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"></link>
     <link rel="icon" href="./assets/images/briefcase.png"></link>
@@ -15,15 +16,31 @@
 <body>
 
     <header class="header">
-        <h1>Samuel Heal</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+        <nav class="navbar">
+            <a href="#" class="logo">Samuel Heal</a>
+            <ul class="menu">
+                <li class="item">
+                    <a href="#about" class="link">About</a>
+                </li>
+                <li class="item">
+                    <a href="#skills" class="link">Skills</a>
+                </li>
+                <li class="item">
+                    <a href="#projects" class="link">Projects</a>
+                </li>
+                <li class="item">
+                    <a href="#contact" class="link">Contact</a>
+                </li>
+                <li class="item">
+                    <a href="./assets/files/Developer-Resume.pdf" target="_blank" class="link">Download Resume</a>
+                </li>
             </ul>
         </nav>
+        <div class="menuBars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </header>
 
     <div class="container">
@@ -44,12 +61,11 @@
             <div class="aboutImgDiv">
                 <img class="img-style" src="assets/images/sam.jpeg">
             </div>
-
+            
         </div>
 
         <div id="skills" class="selector"></div>
-
-        <div class="divContainer2">
+        <div class="divContainer">
             <div class="skillsHeading">
                 <img class="skillsImg" src="assets/images/skills.png">
             </div>
@@ -69,6 +85,7 @@
                     <p>Bootstrap</p>
                     <p>JQuery</p>
                     <p>Anime.js</p>
+                    <p>Node.js</p>
                     <p>Express.js</p>
                     <p>Sequalize</p>
                     <p>Handlebars.js</p>
@@ -84,7 +101,6 @@
             <div class="skillsTextDiv">
                 <h1> > Other Skills < </h1>
                 <div class="skillsAlign">
-                    <p>Node.js</p>
                     <p>API manipulation</p>
                     <p>DOM manipulation</p>       
                 </div>
