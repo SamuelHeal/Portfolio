@@ -249,9 +249,9 @@ main{
     text-decoration: none;
 }
 
-.projectTextDiv a:hover{
+/* .projectTextDiv a:hover{
     transform: scale(1.04);
-}
+} */
 
 .projectType{
     margin-bottom: 30px;
@@ -275,16 +275,14 @@ main{
     width: 40%;
     min-width: 250px;
     height: 400px;
-    margin: 40px
+    margin: 40px;
+    overflow: hidden;
 }
 
-.projectMain:hover{
-    background-color: rgb(240, 228, 252);
-}
+
 
 .projectMain h1{
     margin: 30px;
-    font-size: 20px;
 }
 
 .project{
@@ -299,23 +297,27 @@ main{
     width: 35%;
     min-width: 250px;
     height: 330px;
-    margin: 15px
-}
-
-.project h1{
-    margin: 30px;
-    font-size: 15px;
+    margin: 15px;
+    overflow: hidden;
 }
 
 .project p{
     position: relative;
     top: -20px;
-    font-size: 10px;
 }
 
 .imageContainer{
+    margin-top: 30em;
     width: 100%;
     border-radius: 4px;
+}
+
+.projectDescription{
+    margin-top: 20em;
+}
+
+.projectDescription2{
+    margin-top: 25em;
 }
 
 .imageContainer img{
@@ -325,6 +327,7 @@ main{
 }
 
 .imageContainerSmall{
+    margin-top: 30em;
     width: 100%;
     border-radius: 4px;
 }
@@ -335,6 +338,49 @@ main{
     width: 90%;
     margin: 10px
 }
+
+.imageContainerSmall2{
+    margin-top: 34em;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.imageContainerSmall2 img{
+    border-radius: 2px;
+    height: 70%;
+    width: 90%;
+    margin: 10px
+}
+
+.project .imageContainerSmall{
+    transition: 0.3s;
+}
+
+.project:hover .imageContainerSmall{
+    margin-top: -40em;
+}
+
+.project .imageContainerSmall2{
+    transition: 0.3s;
+}
+
+.project:hover .imageContainerSmall2{
+    margin-top: -40em;
+}
+
+.projectMain .imageContainer{
+    transition: 0.3s;
+}
+
+.projectMain:hover .imageContainer{
+    margin-top: -40em;
+}
+
+.click{
+    color: rgb(247, 96, 96);
+    margin-top: 5px;
+}
+
 
 
 
@@ -419,22 +465,78 @@ footer{
 
 @media screen and (max-width: 875px){
     .projectMain{
-        height: auto
+        height: 300px;
+        
+        
+    }
+
+    .projectDescription{
+        margin-top: 26em;
+    }
+
+    .projectDescription2{
+        margin-top: 34em;
+    }
+
+    .imageContainer{
+        margin-top: 35em;
+    }
+
+    .imageContainerSmall{
+        margin-top: 38em;
+    }
+
+    .imageContainerSmall2{
+        margin-top: 44em;
     }
 
     .project{
-        height: auto
+        height: 240px
     }
+
+
 }
 
 @media screen and (max-width: 366px){
     .projectMain{
-        min-width: 200px
+        min-width: 200px;
+        height: 250px
     }
 
     .project{
-        min-width: 200px
+        min-width: 200px;
+        height: 190px;
 
     }
+
+    .projectDescription{
+        margin-top: 15em;
+        font-size: 10px;
+    }
+
+    .imageContainer{
+        margin-top: 20em;
+    }
+
+    .imageContainerSmall{
+        margin-top: 19em;
+    }
+
+    .imageContainerSmall2{
+        margin-top: 17em;
+    }
+
+    .projectMain:hover .imageContainer{
+        margin-top: -20em;
+    }
+
+    .project:hover .imageContainerSmall{
+        margin-top: -19em;
+    }
+
+    .project:hover .imageContainerSmall2{
+        margin-top: -13em;
+    }
 }
+
 
